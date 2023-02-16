@@ -4,11 +4,11 @@ This is a flask backend with a custom model. Results are returned as a count of 
 
 ## Getting Started
 
-- Clone the repository
+- Ensure you cd into /Backend:
 - Create a venv with python version 3.9.13
 - Ensure you have a cuda enabled GPU
 - Install CUDA 11.7
-- cd into the directory and run :
+- Run the following
 
 ```bash
 pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117
@@ -21,6 +21,8 @@ python ./api.py
 Endpoints are hosted at [http://localhost:5000](http://localhost:5000)
 
 There is a single post endpoint /upload, that takes a series of files and returns a string of the total count.
+
+Prediction images are saved in `/runs`
 
 ### Note:
 

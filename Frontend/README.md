@@ -5,14 +5,13 @@ Implimented using the native HTML5 drag and drop API, JS FileReader API and brow
 
 ## Getting Started
 
-- Clone the repository
-- cd into the directory and run :
+- Ensure you cd into /Frontend:
+- Run the following
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 
 npm run dev
-
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to interat with the app.
+Open [http://localhost:3000](http://localhost:3000) with your browser to interact with the app.
