@@ -2,9 +2,9 @@
 @author: hao
 """
 
-from utils import *
-from hldataset import *
-from hlnet import *
+from Model.utils import *
+from Model.hldataset import *
+from Model.hlnet import *
 from torch.optim.lr_scheduler import StepLR, MultiStepLR
 from torch.utils.data import DataLoader
 from torchvision import transforms
@@ -36,11 +36,11 @@ SCALES = [0.7, 1, 1.3]
 SHORTER_SIDE = 224
 
 # system-related parameters
-DATA_DIR = './data/maize_tassels_counting_uav_dataset'
-DATASET = 'uav'
+DATA_DIR = './data/maize_counting_dataset'
+DATASET = 'mtc'
 EXP = 'tasselnetv2plus_rf110_i64o8_r0125_crop256_lr-2_bs9_epoch500'
-DATA_LIST = './data/maize_tassels_counting_uav_dataset/train.txt'
-DATA_VAL_LIST = './data/maize_tassels_counting_uav_dataset/val.txt'
+DATA_LIST = './data/maize_counting_dataset/train.txt'
+DATA_VAL_LIST = './data/maize_counting_dataset/test.txt'
 
 RESTORE_FROM = 'model_best.pth.tar'
 SNAPSHOT_DIR = './snapshots'
@@ -316,6 +316,8 @@ def validate(net, valset, val_loader, criterion, epoch, args):
                 plt.savefig(os.path.join(epoch_result_dir, image_name.replace(
                     '.jpg', '.png')), bbox_inches='tight', dpi=300)
                 plt.close()
+
+            print('manual count=%4.2f, inferred count=%4.2f' % (gtcount, pdcount))
 
             # compute mae and mse
             pd_counts.append(pdcount)

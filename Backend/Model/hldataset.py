@@ -2,16 +2,12 @@
 @author: hao lu
 """
 
-import os
 import json
-import matplotlib.pyplot as plt
-import matplotlib.cm as cm
 import pandas as pd
 import random
 import numpy as np
 from PIL import Image
 import cv2
-import h5py
 import scipy.io as sio
 from scipy.ndimage.filters import gaussian_filter
 from skimage import util

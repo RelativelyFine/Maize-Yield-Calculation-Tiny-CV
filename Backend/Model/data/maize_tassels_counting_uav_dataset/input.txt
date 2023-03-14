@@ -1,0 +1,10 @@
+/images/DJI_0862 (2).JPG	/labels/DJI_0862 (2).csv
+/images/DJI_0393 (2).JPG	/labels/DJI_0393 (2).csv
+/images/DJI_0397.JPG	/labels/DJI_0397.csv
+/images/DJI_0387.JPG	/labels/DJI_0387.csv
+/images/DJI_0212.JPG	/labels/DJI_0212.csv
+/images/DJI_0453 (2).JPG	/labels/DJI_0453 (2).csv
+/images/DJI_0097.JPG	/labels/DJI_0097.csv
+/images/DJI_0257.JPG	/labels/DJI_0257.csv
+/images/DJI_0138 (2).JPG	/labels/DJI_0138 (2).csv
+/images/DJI_0952 (2).JPG	/labels/DJI_0952 (2).csv

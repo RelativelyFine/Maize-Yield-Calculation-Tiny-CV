@@ -31,7 +31,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Maize Tassel File Upload</h1>
+        <h1 className={styles.title}>
+          Yield Prediction - Corn Field Image Upload
+        </h1>
+        <h2>
+          This is a tool for estimating the yield of your corn fields using
+          artificial neural networks.
+        </h2>
         {/* Pass state data and dispatch to the DropZone component */}
         <DropZone data={data} dispatch={dispatch} />
       </main>

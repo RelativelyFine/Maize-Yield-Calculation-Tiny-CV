@@ -59,7 +59,7 @@ def dense_sample2d(x, sx, stride):
         for j in tw:
             idx_img[i:i+sx,j:j+sx] = idx_img[i:i+sx,j:j+sx]+1
 
-    # # plot redundancy map
+    # plot redundancy map
     # import os
     # import matplotlib.pyplot as plt
     # cmap = plt.cm.get_cmap('hot')

@@ -6,8 +6,8 @@ CUDA_VISIBLE_DEVICES=0 python hltrainval.py \
 --data-list ./data/maize_tassels_counting_uav_dataset/train.txt \
 --data-val-list ./data/maize_tassels_counting_uav_dataset/val.txt \
 --restore-from model_best.pth.tar \
---image-mean 0.3859 0.4905 0.2895 \
---image-std 0.1718 0.1712 0.1518 \
+--image-mean 0.3252 0.5357 0.4468 \
+--image-std 0.1797 0.2015 0.1787 \
 --input-size 64 \
 --output-stride 8 \
 --resize-ratio 0.125 \

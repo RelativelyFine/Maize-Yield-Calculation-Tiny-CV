@@ -17,6 +17,30 @@
   margin-top: 1rem;
 }
 
+.results {
+  display: block;
+  font-size: 1.17em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.resultBorder {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.heatmapContainer {
+  border: 13px solid #fff;
+  border-right: 0px;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+  overflow-y: scroll
+}
+
 .files {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -56,7 +80,7 @@
   width: auto;
   color: black;
   text-transform: uppercase;
-  margin: 2rem;
+  margin: 0rem;
   background-color: #ffffff;
   border-radius: 4rem;
   cursor: pointer;
