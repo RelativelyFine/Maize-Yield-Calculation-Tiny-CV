@@ -4,33 +4,19 @@
 
 from torch.utils.data import Dataset
 import xml.etree.ElementTree as ET
-from skimage.measure import regionprops
-from skimage.measure import label
-from skimage import util
-from scipy.ndimage.filters import gaussian_filter
-import scipy.io as sio
-import h5py
 import cv2
 import random
-import pandas as pd
-import matplotlib.cm as cm
-import matplotlib.pyplot as plt
-import json
 from Model.utils import *
 from Model.hlnet import *
-from torch.optim.lr_scheduler import StepLR, MultiStepLR
 from torch.utils.data import DataLoader
 from torchvision import transforms
 import torch.nn.functional as F
 import torch.nn as nn
 import torch
 import torch.backends.cudnn as cudnn
-from skimage.metrics import structural_similarity
 import os
 import argparse
 from time import time
-
-import cv2 as cv
 import numpy as np
 from PIL import Image
 from matplotlib import pyplot as plt
@@ -367,7 +353,7 @@ def validate(net, val_loader, args):
         os.remove(f)
 
     with torch.no_grad():
-        for i, sample in enumerate(val_loader):
+        for i, sample in enumerate(val_loader): 
             torch.cuda.synchronize()
             start = time()
 

@@ -4,13 +4,6 @@
 
 import scipy
 import numpy as np
-import math
-import cv2 as cv
-from scipy.ndimage import gaussian_filter, morphology
-from skimage.measure import label, regionprops
-from sklearn import linear_model
-import matplotlib.pyplot as plt
-
 
 def compute_mae(pd, gt):
     pd, gt = np.array(pd), np.array(gt)
