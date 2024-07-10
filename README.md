@@ -19,7 +19,3 @@ More detail can be found in [Backend Readme](https://github.com/RelativelyFine/I
 Open [http://localhost:3000](http://localhost:3000) with your browser to interact with the app.
 
 (Endpoints are hosted at [http://localhost:5000](http://localhost:5000))
-
-### Note:
-
-Currently Using YoloV8n on a custom trained tensor for parking detection. This will be changed to the proper model in the future.
